@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FinScore - Financial Health Score</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Fin<span>Score</span></div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#assessment">Assessment</a>
+        </nav>
+    </header>
+
+
+    <!-- HERO SECTION -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="tagline">PERSONAL FINANCE • MADE SIMPLE</p>
+
+            <h1>
+                How healthy<br>
+                is your <span>money?</span>
+            </h1>
+
+            <p class="hero-text">
+                Understand your financial health with a simple
+                assessment and get a personalized score out of 100.
+            </p>
+
+            <a href="#assessment" class="primary-btn">
+                Calculate My Score →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ASSESSMENT SECTION -->
+
+    <section id="assessment" class="assessment">
+
+        <div class="section-heading">
+
+            <p class="tagline">FINANCIAL ASSESSMENT</p>
+
+            <h2>
+                Let's understand your finances.
+            </h2>
+
+            <p>
+                Enter your approximate monthly financial information.
+            </p>
+
+        </div>
+
+
+        <div class="form-container">
+
+            <form id="financeForm">
+
+                <!-- INCOME -->
+
+                <div class="form-group">
+
+                    <label for="income">
+                        Monthly Income (₹)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="income"
+                        placeholder="e.g. 50000"
+                        min="0"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- EXPENSES -->
+
+                <div class="form-group">
+
+                    <label for="expenses">
+                        Monthly Expenses (₹)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="expenses"
+                        placeholder="e.g. 30000"
+                        min="0"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- SAVINGS -->
+
+                <div class="form-group">
+
+                    <label for="savings">
+                        Monthly Savings (₹)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="savings"
+                        placeholder="e.g. 10000"
+                        min="0"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- DEBT -->
+
+                <div class="form-group">
+
+                    <label for="debt">
+                        Monthly Debt Payments (₹)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="debt"
+                        placeholder="e.g. 5000"
+                        min="0"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- EMERGENCY FUND -->
+
+                <div class="form-group">
+
+                    <label for="emergency">
+                        Emergency Savings (₹)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="emergency"
+                        placeholder="e.g. 90000"
+                        min="0"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- INVESTMENTS -->
+
+                <div class="form-group">
+
+                    <label for="investment">
+                        Monthly Investment (₹)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="investment"
+                        placeholder="e.g. 5000"
+                        min="0"
+                        required
+                    >
+
+                </div>
+
+
+                <button type="submit" class="primary-btn">
+                    Calculate My FinScore
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- RESULT SECTION -->
+
+    <section id="result" class="result hidden">
+
+        <p class="tagline">YOUR FINANCIAL HEALTH</p>
+
+        <h2>Your FinScore</h2>
+
+        <div class="score-circle">
+
+            <span id="score">0</span>
+
+            <small>/ 100</small>
+
+        </div>
+
+        <h3 id="status">
+            -
+        </h3>
+
+        <p id="message">
+            Your results will appear here.
+        </p>
+
+
+        <div class="score-breakdown">
+
+            <div>
+                <span>Savings</span>
+                <strong id="savingScore">0/25</strong>
+            </div>
+
+            <div>
+                <span>Spending</span>
+                <strong id="spendingScore">0/20</strong>
+            </div>
+
+            <div>
+                <span>Debt</span>
+                <strong id="debtScore">0/20</strong>
+            </div>
+
+            <div>
+                <span>Emergency Fund</span>
+                <strong id="emergencyScore">0/20</strong>
+            </div>
+
+            <div>
+                <span>Investments</span>
+                <strong id="investmentScore">0/15</strong>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <p>© 2026 FinScore • Financial health made simple.</p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
